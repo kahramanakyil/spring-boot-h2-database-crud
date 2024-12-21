@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bezkoder.spring.jpa.h2.model.Tutorial;
 import com.bezkoder.spring.jpa.h2.repository.TutorialRepository;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:8081", "http://213.250.129.246:8081","http://cae-test-frontend:8081"})
 @RestController
 @RequestMapping("/api")
 public class TutorialController {
